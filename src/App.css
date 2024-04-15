@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.app-container {
+  /* display: flex; */
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-class{
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ConversationsList.css */
+.header-class{
+  height: 35px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.messages {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left {
+  background-color: #cce5ff;
+  align-self: flex-start;
 }
+
+.right {
+  background-color: #f0f0f0;
+  align-self: flex-end;
+}
+
+.no-conversation {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+

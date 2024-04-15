@@ -1,0 +1,20 @@
+/* ChatWindow.css */
+
+.chat-window-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 50px; /* Adjust as needed to accommodate the SendMessage component */
+  position: relative; /* Ensure relative positioning for absolute positioning of SendMessage */
+}
+
+.send-message-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

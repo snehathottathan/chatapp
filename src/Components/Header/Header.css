@@ -1,0 +1,26 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .profile
+  .menu-icon {
+    cursor: pointer;
+  }
+
+  .profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+  }
+  

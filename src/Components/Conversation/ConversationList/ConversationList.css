@@ -1,0 +1,12 @@
+
+.conversations-list-container {
+    width: 25%;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    padding-top: 39px;
+  }
+  
+  .conversations-list {
+    overflow-y: auto;
+    max-height: calc(100vh - 80px); /* Adjust based on your layout */
+  }

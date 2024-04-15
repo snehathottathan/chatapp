@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React, { useState } from 'react';
+
+import './App.css'; // Assuming you have a CSS file for styling
+
+import ConversationList from './Components/Conversation/ConversationList/ConversationList';
+
+import messageData from './Components/Data/messageData'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import ChatWindow from './Components/ChatWindow/ChatWindow';
+import Header from './Components/Header/Header';
+
+const App = () => {
+
+  const [selectedConversation, setSelectedConversation] = useState(null);
+
+
+  const userProfile = messageData.profile;
+
+  const handleConversationSelection = (conversation) => {
+
+    setSelectedConversation(conversation);
+
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="app-container">
+
+      <div className="header-class">
+
+        <Header userProfile={userProfile} />
+
+      </div>
+
+      <div style={{ display: 'flex' }}>
+
+        <ConversationList
+
+          selectedConversation={selectedConversation}
+
+          onConversationSelect={handleConversationSelection}
+
+          messageData={messageData}
+
+        />
+
+        <ChatWindow selectedConversation={selectedConversation} />
+      </div>
+
     </div>
   );
-}
+};
 
 export default App;

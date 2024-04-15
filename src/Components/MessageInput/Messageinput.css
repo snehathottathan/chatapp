@@ -1,0 +1,21 @@
+/* MessageInput.css */
+.message-input {
+    margin-top: 20px;
+  }
+  
+  .message-input input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Add more styles as needed */
+  

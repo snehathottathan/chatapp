@@ -4,51 +4,14 @@ let messageData = {
       "name": "Karthik",
       "picture": "https://image.ibb.co/k0wVTm/profile_pic.jpg",
       "status": "Available",
-      "friends": [
-        {
-          "id": 2,
-          "name": "Alex",
-          "picture": "https://image.ibb.co/cA2oOb/alex_1.jpg",
-          "latest_timestamp": "10:00 AM",
-          "lastChat":
-            "Or maybe not, let me check logistics and call you. Give me sometime"
-        },
-        {
-          "id": 3,
-          "name": "Bob",
-          "picture": "https://image.ibb.co/gSyTOb/bob_1.jpg",
-          "latest_timestamp": "12:30 AM",
-          "lastChat": "Alright"
-        },
-        {
-          "id": 4,
-          "name": "Luke",
-          "picture": "https://image.ibb.co/jOzeUG/luke_1.jpg",
-          "latest_timestamp": "4:12 PM",
-          "lastChat": "I will look into it"
-        },
-        {
-          "id": 5,
-          "name": "Bane",
-          "picture": "https://image.ibb.co/cBZPww/bane_1.jpg",
-          "latest_timestamp": "7:53 PM",
-          "lastChat": "Exactly my point!"
-        },
-        {
-          "id": 6,
-          "name": "Darth Vader",
-          "picture": "https://image.ibb.co/j4Ov3b/darth_vader_1.png",
-          "latest_timestamp": "1:09 PM",
-          "lastChat": "Not quite the same."
-        },
-       
-      ]
+      
     },
     "friends": [
       {
         "id": 2,
         "name": "Alex",
         "picture": "https://image.ibb.co/cA2oOb/alex_1.jpg",
+        "lastChat":"Or maybe not, let me check logistics and call you. Give me sometime",
         "chatlog": [
           {
             "text":
@@ -67,7 +30,7 @@ let messageData = {
           {
             "text":
               "Or maybe not, let me check logistics and call you. Give me sometime",
-            "timestamp": "10:03 AM",
+            "timestamp": "10:03 AM",  
             "side": "left",
             "message_id": 3
           },
@@ -89,6 +52,7 @@ let messageData = {
         "id": 3,
         "name": "Bob",
         "picture": "https://image.ibb.co/gSyTOb/bob_1.jpg",
+        "lastChat": "I will look into it",
         "chatlog": [
           {
             "text":
@@ -124,12 +88,14 @@ let messageData = {
         "id": 5,
         "name": "Bane",
         "picture": "https://image.ibb.co/cBZPww/bane_1.jpg",
+        "lastChat": "No",
         "chatlog": []
       },
       {
         "id": 6,
         "name": "Darth Vader",
         "picture": "https://image.ibb.co/j4Ov3b/darth_vader_1.png",
+        "lastChat": "Next Time",
         "chatlog": []
       }
      

@@ -8,8 +8,6 @@ import './ConversationList.css'; // Assuming you have a CSS file for styling
 
 const ConversationList = ({ selectedConversation, onConversationSelect, messageData }) => {
 
-  console.log(messageData);
-
   return (
 
     <div className="conversations-list-container">
